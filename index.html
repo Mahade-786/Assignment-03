@@ -20,6 +20,9 @@
         .input-bg{
             background-image: url(./assets/bg.jpg);
         }
+        .bg-color{
+            background-color: rgb(239, 236, 236);
+        }
     </style>
 </head>
 <body class="manrope">
@@ -27,7 +30,7 @@
    <header class="container mx-auto">
         <!-- navber -->
     <section class="mb-10">
-        <div class="navbar">
+        <div class="navbar p-7">
             <div class="navbar-start">
             <i class="fa-solid fa-arrow-right bg-lime-400 text-black rounded-xl px-1 py-1 -rotate-45 -m-3"></i>
               <a class="btn btn-ghost text-2xl">Rinterio</a>
@@ -68,7 +71,7 @@
 
     <!-- Banner section -->
      <section class="mb-20 flex-col justify-items-center px-24">
-        <div class="w-[450px]">
+        <div class="lg:w-[450px] w-[380px]">
             <img src="./assets/banner.png" alt="">
         </div>
         <div class="text-center space-y-5">
@@ -89,17 +92,26 @@
 
     <!-- Main section -->
     <main class="container mx-auto">
-        <section class="flex flex-col lg:flex-row mb-20 p-10">
+        <section class="flex flex-col lg:flex-row mb-20 p-7 bg-color">
             <!-- text content -->
-             <div class="mx-auto pt-10 space-y-5 p-10">
-                <h1 class="text-3xl font-bold w-2/3">We design thoughtful, liveable spaces</h1>
+             <div class="mx-auto space-y-3 p-10">
+                <img class="-mt-5 -ml-12 lg:block hidden" src="./assets/Vector.png" alt="">
+                <button class="flex px-3 py-1 gap-1 bg-white rounded-3xl shadow-xl items-center">
+                    <div>
+                        <i class="fa-solid fa-arrow-right text-black rounded-2xl px-1 py-1"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs">About us</p>
+                    </div>
+                </button>
+                <h1 class="text-3xl font-bold lg:w-2/3 w-4/4">We design thoughtful, liveable spaces</h1>
                 <p class="w-6/7 text-sm">The barn house captivates with its blend of rustic charm and 
                     modern sophistication, featuring weathered wood, sleek metal accents.</p>
                     <!-- card-1 -->
                      <div class="flex gap-4 shadow-xl px-7 py-2">
                         <!-- iamge -->
                          <div>
-                            <img src="./assets/commercial.png" alt="">
+                            <img class="w-40 lg:w-12"  src="./assets/commercial.png" alt="">
                          </div>
                          <!-- text -->
                           <div>
@@ -111,7 +123,7 @@
                      <div class="flex gap-4 shadow-xl px-7 py-2">
                         <!-- iamge -->
                          <div>
-                            <img src="./assets/residential.png" alt="">
+                            <img class="w-40 lg:w-12" src="./assets/residential.png" alt="">
                          </div>
                          <!-- text -->
                           <div>
@@ -122,14 +134,14 @@
              </div>
              <!-- Image content -->
               <div>
-                <img class="rounded-lg w-[570px] h-[370px]" src="./assets/Rectangle.png" alt="">
+                <img class="rounded-lg w-[570px] h-[390px] mt-5" src="./assets/Rectangle.png" alt="">
               </div>
         </section>
     
         <!-- Work section -->
-         <section class="mb-20">
+         <section class="mb-20 bg-color p-10">
             <div class="mb-10 space-y-4">
-                <button class="flex px-5 py-2 gap-1 rounded-3xl shadow-xl mx-auto">
+                <button class="flex px-5 py-2 gap-1 bg-white rounded-3xl shadow-xl mx-auto">
                     <div>
                         <i class="fa-solid fa-arrow-right text-black rounded-2xl px-1 py-1"></i>
                     </div>
@@ -141,7 +153,7 @@
                 <p class="text-sm w-3/5 text-center mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- Cards -->
-             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:p-7 p-16">
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 justify-items-center">
                 <!-- card 1 -->
                  <div class="shadow-lg bg-pink-300 w-[230px] p-3 space-y-1 rounded-lg">
                     <img src="./assets/concept.png" alt="">
@@ -150,20 +162,20 @@
                  </div>
                    <!-- card 2 -->
                    <div class="shadow-lg bg-yellow-300 w-[230px] p-3 space-y-1 rounded-lg">
-                    <img src="./assets/concept.png" alt="">
-                    <h3 class="font-bold">Concept</h3>
+                    <img src="./assets/flow-chart.png" alt="">
+                    <h3 class="font-bold">Design Process</h3>
                     <p class="text-sm w-6/7">The barn house captivates with its blend of rustic charm and modern.</p>
                  </div>
                    <!-- card 3 -->
                    <div class="shadow-lg bg-orange-300 w-[230px] p-3 space-y-1 rounded-lg">
-                    <img src="./assets/concept.png" alt="">
-                    <h3 class="font-bold">Concept</h3>
+                    <img src="./assets/vision.png" alt="">
+                    <h3 class="font-bold">Supervision</h3>
                     <p class="text-sm w-6/7">The barn house captivates with its blend of rustic charm and modern.</p>
                  </div>
                    <!-- card 4 -->
                    <div class="shadow-lg bg-blue-300 w-[230px] p-3 space-y-1 rounded-lg">
-                    <img src="./assets/concept.png" alt="">
-                    <h3 class="font-bold">Concept</h3>
+                    <img src="./assets/budget-planning.png" alt="">
+                    <h3 class="font-bold">Budget Planning</h3>
                     <p class="text-sm w-6/7">The barn house captivates with its blend of rustic charm and modern.</p>
                  </div>
              </div>
@@ -172,7 +184,7 @@
          <!-- Portfolio section -->
           <section class="mb-20">
             <div class="mb-10 space-y-4">
-                <button class="flex px-5 py-2 gap-1 rounded-3xl shadow-xl mx-auto">
+                <button class="flex px-5 py-2 gap-1 bg-lime-200 rounded-3xl shadow-xl mx-auto">
                     <div>
                         <i class="fa-solid fa-arrow-right text-black rounded-2xl px-1 py-1"></i>
                     </div>
@@ -184,10 +196,10 @@
                 <p class="text-sm w-3/5 text-center mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- Cards -->
-            <div class="mb-5 ">
+            
                 <!-- Card-1 -->
                  <div class="flex flex-col lg:flex-row gap-6">
-                    <div class="flex shadow-lg gap-5 w-2/3 rounded-2xl p-5 h-[190px]">
+                    <div class="flex sm:flex-col lg:flex-row shadow-lg gap-5 lg:w-2/3 w-3/3 rounded-2xl lg:p-5 p-0 h-[190px]">
                        <div class="w-[520px]">
                         <img src="./assets/img1.png" alt="">
                        </div>
@@ -205,20 +217,19 @@
                        </div>
                     </div>
     
-                    <div class="w-[426px] p-4 shadow-xl rounded-xl">
+                    <div class="lg:w-[426px] w-[360px] p-4 shadow-xl rounded-xl">
                         <img src="./assets/img2.png" alt="">
                     </div>
     
                  </div>
-            </div>
-               
+           
                 <!-- Card-2 -->
                 <div class="flex lg:flex-row flex-col gap-4">
                     <div class="shadow-lg rounded-2xl p-3">
                         <img src="./assets/img3.png" alt="">
                     </div>
                         <div class="flex shadow-lg rounded-2xl gap-5 p-3">
-                            <div class="w-[260px]">
+                            <div class="w-[260px] p-0">
                              <img src="./assets/img4.png" alt="">
                             </div>
                             <div class="space-y-3">
@@ -242,13 +253,58 @@
              
           </section>
 
-          <!-- Input section -->
+          <!-- New section FaQ -->
+          <section class="mb-20">
+            <h1 class="text-4xl font-bold text-center mb-20">Frequently Asked <span class="text-orange-500">Questions</span></h1>
+            <!-- image-content -->
+            <div class="flex flex-col lg:flex-row">
+
+              <div class="flex-1 p-5">
+                <img
+                  src="./assets/faq.png"
+                  class="w-[430px] rounded-lg shadow-2xl" />
+              </div>  
+                  <!-- text content -->
+              <div class="flex-1 p-5 space-y-3">
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What are the most important things I should
+                    know about riding a bike?</div>
+                  <div class="collapse-content">
+                    <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a 
+                    new one?</div>
+                  <div class="collapse-content">
+                    <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?</div>
+                  <div class="collapse-content">
+                    <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">What rules should I follow when riding my bike?</div>
+                  <div class="collapse-content">
+                    <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </section>
           
          </main>
-
+         <!-- Input section -->
          <section class="input-bg p-16">
             <div class="mb-10 space-y-4">
-                <button class="flex px-4 py-1 gap-1 bg-lime-200 rounded-3xl shadow-xl mx-auto">
+                <button class="flex px-4 py-1 gap-1 bg-lime-200 rounded-3xl shadow-xl mx-auto items-center">
                     <div>
                         <i class="fa-solid fa-arrow-right text-black rounded-2xl px-1 py-1"></i>
                     </div>
@@ -260,30 +316,26 @@
                 <p class="text-sm w-3/5 text-center mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- input field section -->
-             <div class="space-y-4">
-                <div class="flex flex-col lg:flex-row justify-center gap-8">
-                    <div>
-                        <input type="text" placeholder="First Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                <div class="justify-items-center">
+                    <div class="flex flex-col lg:flex-row lg:gap-8 gap-4 my-3">
+                        <div> <input type="text" placeholder="Last Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                        </div>
+                        <div><input type="text" placeholder="Last Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                        </div>
                     </div>
-                    <div>
-                        <input type="text" placeholder="Last Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
-                    </div>
-                </div>
-                <div class="flex flex-col lg:flex-row justify-center gap-8">
-                    <div>
-                        <input type="text" placeholder="Phone Number*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Email Number" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                    <div class="flex flex-col lg:flex-row lg:gap-8 gap-4 my-3">
+                        <div> <input type="text" placeholder="Last Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                        </div>
+                        <div> <input type="text" placeholder="Last Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                        </div>
                     </div>
                 </div>
-            </div>
             <br>
             <div class="flex justify-center text-start">
                 <input type="text" placeholder="Write your message here" class="input text-sm input-bordered w-[650px] h-[120px] rounded-xl " />
              </div>
              <br>
-             <button class="flex bg-lime-300 px-64 py-2 gap-1 rounded-3xl mx-auto">
+             <button class="flex bg-lime-300 lg:px-64 px-20  py-2 gap-2 rounded-3xl mx-auto">
                 <div>
                     <p>Send Mail</p>
                 </div>
@@ -303,14 +355,14 @@
                       <p class="text-sm text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
                     </div> 
                     <br>
-                    <div class="flex flex-col text-gray-300  lg:flex-row justify-center">
-                        <ul class="menu menu-horizontal px-1 gap-8">
-                          <li><a class="font-bold">Home</a></li>
-                          <li><a>Services</a></li>
-                          <li><a>Portfolio</a></li>
-                          <li><a>Blog</a></li>
-                          <li><a>Contact Us</a></li>
-                        </ul>
+                    <div class="flex flex-col  text-gray-300  lg:flex-row justify-center lg:gap-24 gap-4 mb-10">
+                        
+                          <button>Home</button>
+                          <button>Services</button>
+                          <button>Portfolio</button>
+                          <button>Blog</button>
+                          <button>Contact Us</button>
+                        
                       </div> 
                       <div>
                         <button class="flex bg-lime-400 px-4 py-1 gap-1 rounded-3xl mx-auto mt-5">
