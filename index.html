@@ -17,6 +17,9 @@
         .manrope{
             font-family: "Poppins", serif;
         }
+        .input-bg{
+            background-image: url(./assets/bg.jpg);
+        }
     </style>
 </head>
 <body class="manrope">
@@ -240,8 +243,11 @@
           </section>
 
           <!-- Input section -->
-           <section>
-            <div class="mb-10 space-y-4">
+          
+         </main>
+
+         <section class="input-bg">
+            <div class="mb-10 pt-5 space-y-4">
                 <button class="flex px-4 py-1 gap-1 bg-lime-200 rounded-3xl shadow-xl mx-auto">
                     <div>
                         <i class="fa-solid fa-arrow-right text-black rounded-2xl px-1 py-1"></i>
@@ -254,15 +260,59 @@
                 <p class="text-sm w-3/5 text-center mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- input field section -->
-             <div class="flex flex-col lg:flex-row">
-                <div>
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+             <div class="space-y-4">
+                <div class="flex flex-col lg:flex-row justify-center gap-8">
+                    <div>
+                        <input type="text" placeholder="First Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Last Name*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                    </div>
                 </div>
-                <div>
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                <div class="flex flex-col lg:flex-row justify-center gap-8">
+                    <div>
+                        <input type="text" placeholder="Phone Number*" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email Number" class="input text-sm input-bordered w-full rounded-full max-w-xs" />
+                    </div>
                 </div>
+            </div>
+            <br>
+            <div class="flex justify-center text-start">
+                <input type="text" placeholder="Write your message here" class="input text-sm input-bordered w-[650px] h-[150px] rounded-xl " />
              </div>
+             <br>
+             <button class="flex bg-lime-300 px-64 py-2 gap-1 rounded-3xl mx-auto">
+                <div>
+                    <p>Send Mail</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right bg-black text-white rounded-2xl px-1 py-1 -rotate-45"></i>
+                </div>
+               </button>
+            
            </section>
-         </main>
+
+           <footer class="bg-black">
+            <div class="text-center">
+                <i class="fa-solid fa-arrow-right bg-lime-400 text-black rounded-xl px-1 py-1 -rotate-45 -m-3"></i>
+                  <a class=" text-white btn btn-ghost text-2xl">Rinterio</a>
+                  <br>
+                  <p class="text-sm text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div> 
+                <br>
+                <div class="flex flex-col text-gray-300  lg:flex-row justify-center">
+                    <ul class="menu menu-horizontal px-1 gap-8">
+                      <li><a class="font-bold">Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>  
+           </footer>
+
+
 </body>
 </html>
